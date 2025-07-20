@@ -2,31 +2,40 @@
 *{
     font-family: "Poppins", sans-serif;
     margin:0px;
+    box-sizing: border-box;
 }
 .navbar {
     display: flex;
-    justify-content: space-around;
     padding:10px;
     box-shadow: 0px 1px 3px -2px black;
+
 }
 .nav-logo{
     display:flex;
     align-items: center;
     gap:8px;
+    width: 30%;
+    justify-content: end;
+    padding-right: 7%;
+    /* background: red; */
 }
 .nav-logo p {
-    font-size:38px;
+    font-size:200%;
     color:black;
     font-weight:600px;
+    /* background: red; */
 }
 .nav-menu {
     display: flex;
     align-items: center;
     list-style:none;
-    gap:50px;
+    justify-content: space-around;
     font-size:17px;
     font-weight: 500;
     color:#626262;
+    width: 50%;
+    padding:0px 8%;
+    /* background: blue; */
 }
 .nav-menu li{
     display:flex;
@@ -46,7 +55,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:45px;
+    gap:15%;
+    width:20%;
+    /* background: red; */
 }
 
 .nav-login-cart button {
@@ -75,7 +86,15 @@
     padding:4px 6px 4px 6px;
     font-size:18px;
     margin-bottom:38px;
-    margin-left: -54px;
+    margin-left: -20%           ;
     
 
+}
+
+@media (max-width:500px) {
+    .nav-logo p {
+        font-size:28px;
+        color:black;
+        font-weight:600px;
+    }
 }
