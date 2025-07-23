@@ -12,22 +12,17 @@
     display:flex;
     align-items: center;
     gap:8px;
-    width: 30%;
-    justify-content: end;
-    padding-right: 7%;
-    /* background: red; */
 }
 .nav-logo p {
-    font-size:200%;
+    font-size:38px;
     color:black;
     font-weight:600px;
-    /* background: red; */
 }
 .nav-menu {
     display: flex;
     align-items: center;
     list-style:none;
-    justify-content: space-around;
+    gap:50px;
     font-size:17px;
     font-weight: 500;
     color:#626262;
@@ -50,9 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:15%;
-    width:20%;
-    /* background: red; */
+    gap:45px;
 }
 
 .nav-login-cart button {
@@ -81,7 +74,7 @@
     padding:4px 6px 4px 6px;
     font-size:18px;
     margin-bottom:38px;
-    margin-left: -20%           ;
+    margin-left: -54px;
     
 }
 .ri-bar-chart-horizontal-line {
@@ -173,12 +166,4 @@
         transform: scale(0.8);
     }
 
-}
-
-@media (max-width:500px) {
-    .nav-logo p {
-        font-size:28px;
-        color:black;
-        font-weight:600px;
-    }
 }
