@@ -9,12 +9,12 @@ const ShopCategory = (props) => {
   // console.log(all_products);
   return (
     <div className='shop-category'>
-          <img className="shopcategory-banner" src={props.banner} alt="" />
+          <img className="shop-category-banner" src={props.banner} alt="" />
           <div className="shop-category-indexShort">
             <p>
               <span>Showing 1-12</span> out of 36 products
             </p>
-            <div className="shopcategory-sort">
+            <div className="shop-category-sort">
               Sort by <img src={dropdown_icon} alt="" />
             </div>
           </div>
@@ -32,9 +32,9 @@ const ShopCategory = (props) => {
               })
             }
           </div>
-          <div className="shopcategory-loadmore">
+          <div className="shop-category-loadmore">
                Explore more
-            </div>
+          </div>
     </div>
   )
 }

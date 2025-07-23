@@ -1,4 +1,4 @@
-import React, { useState,useContext } from 'react'
+import React, { useState,useContext,useRef } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
@@ -9,8 +9,14 @@ import { ShopContext } from '../Context/ShopContext'
 const Navbar = () => {
     const {getTotalItems} = useContext(ShopContext);
     const [underline,setUnderline] = useState("");
+    const menuRef = useRef();
+    // console.log(myRef);
     const underlineHandler = (val) => {
         setUnderline(val);
+    }
+
+    const dropDownToggle = (e) => {
+        menuRef.current.classList.toggle ('nav-menu-visible'); 
     }
 
   return (
@@ -19,7 +25,8 @@ const Navbar = () => {
             <img src={logo} alt="" />
             <p>SHOPPER</p>
         </div>
-        <ul className='nav-menu'>
+        <i onClick={dropDownToggle} class="ri-bar-chart-horizontal-line"></i>
+        <ul ref={menuRef} className='nav-menu'>
             <li onClick={() => {underlineHandler("Shop")}}><Link to='/' style={{textDecoration:'none', color:'#626262'}}>Shop</Link> {underline === "Shop" ? <hr/> : <></> }</li>
             <li onClick={() => {underlineHandler("Men")}}><Link to='/mens' style={{textDecoration:'none', color:'#626262'}}>Men</Link> {underline === "Men" ? <hr/> : <></> }</li>
             <li onClick={() => {underlineHandler("Women")}}><Link to='/womens' style={{textDecoration:'none', color:'#626262'}}>Women</Link> {underline === "Women" ? <hr/> : <></> }</li>

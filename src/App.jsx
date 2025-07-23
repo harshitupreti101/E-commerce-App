@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-          <Navbar />
+          <Navbar />    
           <Routes>
             <Route path='/' element={<Shop/>}></Route>
             <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid"/>}></Route>

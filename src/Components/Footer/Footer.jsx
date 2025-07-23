@@ -33,7 +33,7 @@ const Footer = () => {
 
         <div className="footer-copywriter">
             <hr />
-            <p>© 2021–2023 Harshit Upreti. All rights reserved.</p>
+            <p>© 2025–2026 Harshit Upreti. All rights reserved.</p>
         </div>
 
     </div>
