@@ -14,7 +14,7 @@ import Footer from './Components/Footer/Footer.jsx'
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter>   
           <Navbar />    
           <Routes>
             <Route path='/' element={<Shop/>}></Route>
@@ -27,6 +27,7 @@ const App = () => {
 
           </Routes>
           <Footer/>
+
 
       </BrowserRouter>
     </div>

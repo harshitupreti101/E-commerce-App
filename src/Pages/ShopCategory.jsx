@@ -19,7 +19,7 @@ const ShopCategory = (props) => {
             </div>
           </div>
           <div className="shop-category-products">
-            {
+          {
               all_product.map((e,index)=>{
                 
                 if (props.category === e.category){

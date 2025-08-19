@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className='navbar'>
         <div className="nav-logo">
             <img src={logo} alt="" />
-            <p>SHOPPER</p>
+            <p>CARTIFY</p>
         </div>
         <i onClick={dropDownToggle} class="ri-bar-chart-horizontal-line"></i>
         <ul ref={menuRef} className='nav-menu'>
